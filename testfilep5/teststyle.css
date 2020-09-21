@@ -1,0 +1,263 @@
+
+
+:root{
+    --BcolorO :0;
+    --colorA : 0;
+    --colorB : 0;    
+    --colorC : 0;    
+    --colorD : 0;      
+    
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+    background-color: var(--BcolorO);
+    size: 1520px;
+}
+.login{
+     
+    
+}
+.main{
+    
+}
+.todayjournal{
+    
+}
+.manageplanner{
+    
+}
+#labelU{
+    position: absolute;
+    color : black;
+    left : 480px;
+    top : 185px;
+    font-size : 17px;
+}
+#labelP{
+    position: absolute;
+    color : black;
+    left : 480px;
+    top : 230px;
+    font-size : 17px;
+}
+#loginButton {
+    position: absolute;
+    left : 800px;
+    top : 200px;
+    width : 100px;
+    height: 80px;
+    text-align: center;
+    font-size : 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    border-radius : 0.3vw;
+    background-color: var(--colorA);
+    color : var(--BcolorO);
+}
+#wrongSig {
+    position: absolute;
+    left : 580px;
+    top: 270px;
+    font-size : 12px;
+    color : red;
+}
+.textbox {
+    
+    width : 200px;
+    height: 30px;
+    font-size : 19px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius : 4px;
+    color : var(--colorA);
+}
+#labelforusername{
+    position: absolute;
+    left : 500px;
+    top : 203px;
+    font-size : 18px;
+    color : var(--colorA);
+}
+#headline{
+    position:absolute;
+    text-align : center;
+    left : 375px;
+    top : 10px;    
+    height : 100px;
+    font-size : 80px;
+    color : var(--colorA);
+    font-weight : 600;
+    font-family :cursive;
+}
+#labelforpassword{
+    position: absolute;
+    left : 480px;
+    top : 248px;
+    color : var(--colorA);
+    font-size : 18px;
+    
+}
+#username{
+    position: absolute;
+    left : 570px;
+    top : 200px;
+    
+}
+#password{
+    position: absolute;
+    left : 570px;
+    top : 245px;
+    
+}
+#todayjournalButton{
+    position:absolute;
+    left: 565px;
+    top : 200px;
+    width : 400px;
+    height: 90px;
+    text-align: center;
+    font-size : 45px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius : 5px;
+    background-color: var(--colorA);
+    color : var(--BcolorO);
+    font-family: fantasy;
+}
+#manageplannerButton{
+    position:absolute;
+    left: 565px;
+    top : 320px;
+    width : 400px;
+    height: 90px;
+    text-align: center;
+    font-size : 45px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius : 5px;
+    background-color: var(--colorA);
+    color : var(--BcolorO);
+    font-family: fantasy;
+}
+
+svg{
+    position : absolute;
+    margin-left : -20px;
+    margin-top : -20px;
+    fill:var(--colorA);
+    height : 35px;
+    width : 35px;
+    
+    
+}
+#goBackButton{
+    text-align : center;
+    position : absolute;
+    top : 20px;
+    left : 20px;
+    width : 70px;
+    height : 70px;
+    border-color : var(--colorA);
+    color : var(--colorA);
+    border-radius : 10px;
+    font-size : 14px;
+    font-weight : 600;
+    background-color : var(--colorC);
+}
+#date{
+    position:absolute;
+    left : 140px;
+    top : 300px;
+    color : var(--colorA);
+    font-family :sans-serif,monospace;
+    width: 170px;
+    height : 40px;
+    font-size: 20px;
+    font-weight : 700;
+    border-color : var(--colorA);
+    border-width : 3px;
+    border-radius : 10px;
+}
+#addjournalButton{
+    position : absolute;
+    border : none;
+    font-weight : 900;
+    top : 300px;
+    left : 1015px;
+    border-radius : 10px;
+    text-align : center;
+    font-size : 40px;
+    border : 3px solid var(--colorA);
+    background-color : var(--colorC);
+    width: 48px;
+    height : 48px;
+}
+#Time{
+    position:absolute;
+    left : 320px;
+    top : 300px;
+    color : var(--colorA);
+    font-family :sans-serif,monospace;
+    width: 170px;
+    height : 40px;
+    font-size: 20px;
+    font-weight : 700;
+    border-color : var(--colorA);
+    border-width : 3px;
+    border-radius : 10px;
+}
+#journalInput{
+    position : absolute;
+    left : 505px;
+    top : 300px;
+    color : var(--colorA);
+    font-family :sans-serif,monospace;
+    width: 490px;
+    height : 40px;
+    font-size: 20px;
+    font-weight : 400;
+    border-color : var(--colorA);
+    border-width : 3px;
+    border-radius : 10px;
+}
+.journals{
+    padding : 5px;
+    font-size : 20px;
+    text-align : center;
+    border : 0px solid var(--colorA);
+    border-right : 2px solid;
+    border-top : 2px solid;
+    height : 30px;
+    font-size : 25px;
+}
+#journal{
+    display: grid;
+    grid-template-columns : 170px 170px 540px;
+    position : absolute;
+    padding : -2px;
+    left : 140px;
+    top : 200px;
+    width : 880px;
+    border-radius : 10px;
+    border : 2px solid black;
+    
+    
+}
+#endjournal{
+    border : 0px;
+    
+}
+#endjournalNew{
+    border-width : 0px;
+    border-top : 2px solid;
+}
+.firstLineJournals{
+    border-top-width : 0px;
+}
+.hide{
+    display : none !important;
+}
