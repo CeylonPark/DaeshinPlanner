@@ -6,10 +6,10 @@ var bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(express.static('testfilep5'));
+app.use(express.static('public'));
 
 app.get('/login', (request, response) => {
-    fs.readFile('./testfilep5/testindex.html', 'utf8', (error, html) => {
+    fs.readFile('index.html', 'utf8', (error, html) => {
         response.send(html);
     });
 });
@@ -54,9 +54,9 @@ app.post('/login', (req, res) => {
 
     var uname = req.body.username;
     var pwd = req.body.password;
-    
+
     //데이터 베이스
-    if(uname === user.username && pwd === user.password){
+    if(uname === user.username && pwd === user.password) {
         req.session.displayName = user.displayName;
         res.redirect('/welcome');
     } else {
