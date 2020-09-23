@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
   </head>
   <body>
-    <a href="/login"><h1 id="headline">DAESHIN PLANNER</h1></a>
+    <a href="/"><h1 id="headline">DAESHIN PLANNER</h1></a>
     <div id="under"></div>
-    <form id="loginForm" action="/login" method="POST">
+    <form id="loginForm" action="/auth/login" method="POST">
       <label class="loginLabel">아이디:&nbsp;&nbsp;&nbsp;<input type="text" id="username" class="textBox" name="username"></label>
       <label class="loginLabel">비밀번호:&nbsp;&nbsp;&nbsp;<input type="password" id="password" class="textBox" name="password"></label>
       <input type="submit" id="loginButton" class="login" value="LOGIN">
