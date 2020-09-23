@@ -4,6 +4,10 @@ const app = express();
 const session = require('express-session');
 const bodyParser = require('body-parser');
 
+//ejs 사용
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
 app.use(bodyParser.urlencoded({extended:false}));
 app.use('/static', express.static('public'));
 
@@ -21,8 +25,10 @@ app.use(session({
     saveUninitialized: true
 }));
 
+var index = require('./routes/index.js');
+app.use('/', index);
 // 사용자 페이지, 세션값 유무에 따라서 다른 메세지를 표시
-app.get('/', function(req, res){
+/*app.get('/', function(req, res){
     if(req.session.displayName){
         res.send(`
             <h2>Hello, ${req.session.displayName} </h2>
@@ -36,6 +42,7 @@ app.get('/', function(req, res){
     }
 });
 
+*/
 // 로그아웃 처리 - 세션 삭제 후 리다이렉트
 app.get('/auth/logout', function(req, res) {
     delete req.session.displayName;
@@ -50,7 +57,7 @@ app.post('/auth/login', (req, res) => {
         displayName:'10406 박준상'
     };
 
-    var uname = req.body.username;
+    var uname = req.body.id;
     var pwd = req.body.password;
 
     //데이터 베이스

@@ -17,7 +17,7 @@ html, body {
     color : var(--colorC);
     font-family :cursive;
 }
-#under {
+#headline_under {
     margin-bottom: 5%;
     padding: 5px;
     background-color: var(--colorB);
@@ -28,9 +28,6 @@ html, body {
     margin-left: 10%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-}
-#username {
-    margin-bottom: 12px;
 }
 #loginButton {
     grid-column: 2 / 3;
