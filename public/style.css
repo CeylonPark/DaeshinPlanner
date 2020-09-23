@@ -18,16 +18,19 @@ html, body {
     font-family :cursive;
 }
 #under {
+    margin-bottom: 5%;
     padding: 5px;
     background-color: var(--colorB);
 }
 
 #loginForm {
     display: grid;
-    margin-top: 6%;
-    padding-left: 10%;
+    margin-left: 10%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#username {
+    margin-bottom: 12px;
 }
 #loginButton {
     grid-column: 2 / 3;
@@ -36,11 +39,18 @@ html, body {
     height: 80px;
     text-align: center;
     font-size : 15px;
-    border-color: black;
-    border-style: solid;
-    border-width: 0px;
-    border-radius : 0.3vw;
+    color: white;
+    border: 0px solid black;
+    border-radius : 0.5vw;
     background-color: var(--colorC);
+    margin-left: 24px;
+}
+#wrongSign {
+    margin: 0px;
+    margin-right: 10px;
+    text-align: right;
+    font-size : 12px;
+    color : red;
 }
 .loginLabel {
     text-align: right;
@@ -56,4 +66,7 @@ html, body {
     border-width: 1px;
     border-radius : 4px;
     color : var(--colorC);
+}
+a {
+    text-decoration: none;
 }
