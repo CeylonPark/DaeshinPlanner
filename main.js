@@ -24,7 +24,10 @@ var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 //authRouter
-var authRouter = require('./routes/auth/auth');
-app.use('/auth', authRouter);
+var loginRouter = require('./routes/auth/login');
+var logoutRouter = require('./routes/auth/logout');
+app.use('/auth', loginRouter, logoutRouter);
+
+
 
 app.listen(80);

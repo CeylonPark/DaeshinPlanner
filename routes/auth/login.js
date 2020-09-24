@@ -3,7 +3,7 @@ var router = express.Router();
 module.exports = router;
 
 router.get('/login', (request, response) => {
-    response.render('auth/auth', {title : 'Login', worngSign: ''});
+    response.render('auth/login', {title: 'Login', worngSign: ''});
 });
 
 router.post('/login', (request, response) => {
@@ -21,7 +21,6 @@ router.post('/login', (request, response) => {
         request.session.displayName = user.displayName;
         response.redirect('/');
     } else {
-        response.send('Who are you? <a href="/auth/login">login</a>');
+        response.render('auth/login', {title: 'Login', worngSign: '잘못된 로그인.'});
     }
-    response.send(uname);
 });
