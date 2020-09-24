@@ -1,0 +1,7 @@
+<% layout('../layout/layout')%>
+<form id="loginForm" action="/auth/login" method="POST">
+  <label class="loginLabel">아이디:&nbsp;&nbsp;&nbsp;<input type="text" style="margin-bottom: 12px;" class="textBox" name="id"></label>
+  <label class="loginLabel">비밀번호:&nbsp;&nbsp;&nbsp;<input type="password" class="textBox" name="password"></label>
+  <input type="submit" id="loginButton" value="LOGIN">
+  <p id="wrongSign"><%=worngSign%></p>
+</form>

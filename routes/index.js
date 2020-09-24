@@ -1,18 +1,17 @@
 var express = require('express');
 var router = express.Router();
+module.exports = router;
 
-app.get('/', (req, res) => {
-    if(req.session.displayName){
-        res.send(`
-            <h2>Hello, ${req.session.displayName} </h2>
+router.get('/', (request, response) => {
+    if(request.session.displayName){
+        response.send(`
+            <h2>Hello, ${request.session.displayName} </h2>
             <a href="/auth/logout">logout</a>
         `);
     } else {
-        res.send(`
+        response.send(`
             <h2>Please login...</h2>
             <a href="/auth/login">login</a>
         `);
     }
 });
-
-module.exports = router;
